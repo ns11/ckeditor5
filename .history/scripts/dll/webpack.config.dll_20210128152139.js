@@ -13,16 +13,12 @@ const { bundler, styles } = require( '@ckeditor/ckeditor5-dev-utils' );
 const ROOT_DIRECTORY = path.resolve( __dirname, '..', '..' );
 const IS_DEVELOPMENT_MODE = process.argv.includes( '--dev' );
 
-//	set the build path
-const buildPath = path.join( ROOT_DIRECTORY, '..', '..', 'djangocms_text_ckeditor', 'static', 'djangocms_text_ckeditor', 'build' );
-
 if ( ROOT_DIRECTORY !== process.cwd() ) {
 	throw new Error( 'This script should be called from the package root directory.' );
 }
 
 const webpackConfig = {
-	//	mode: IS_DEVELOPMENT_MODE ? 'development' : 'production',
-	mode: 'development',
+	mode: IS_DEVELOPMENT_MODE ? 'development' : 'production',
 	performance: { hints: false },
 	entry: [
 		// The base of the CKEditor 5 framework, in order of appearance:
@@ -51,7 +47,7 @@ const webpackConfig = {
 		moduleIds: 'named'
 	},
 	output: {
-		path: buildPath,
+		path: path.join( ROOT_DIRECTORY, '..', '..', 'djangocms_text_ckeditor', 'static', 'djangocms_text_ckeditor', 'build' ),
 		filename: 'ckeditor5-dll.js',
 		library: [ 'CKEditor5', 'dll' ],
 		libraryTarget: 'umd'
@@ -64,7 +60,7 @@ const webpackConfig = {
 		new webpack.DllPlugin( {
 			name: 'CKEditor5.dll',
 			context: 'src',
-			path: path.join( buildPath, 'ckeditor5-dll.manifest.json' ),
+			path: path.join( ROOT_DIRECTORY, 'build', 'ckeditor5-dll.manifest.json' ),
 			format: true,
 			entryOnly: true
 		} )

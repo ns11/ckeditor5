@@ -22,7 +22,7 @@ if ( ROOT_DIRECTORY !== process.cwd() ) {
 
 const webpackConfig = {
 	//	mode: IS_DEVELOPMENT_MODE ? 'development' : 'production',
-	mode: 'development',
+	mode: 'development',	
 	performance: { hints: false },
 	entry: [
 		// The base of the CKEditor 5 framework, in order of appearance:
