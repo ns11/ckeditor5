@@ -19,6 +19,7 @@ const standAlonePath = path.join( ROOT_DIRECTORY, 'build', 'ckeditor5-dll.manife
 const addonPath = path.join( ROOT_DIRECTORY, '..', '..', 'djangocms_text_ckeditor', 'static', 'djangocms_text_ckeditor', 'build' );
 const modulePath = IS_STAND_ALONE ? standAlonePath : addonPath;
 
+
 if ( ROOT_DIRECTORY !== process.cwd() ) {
 	throw new Error( 'This script should be called from the package root directory.' );
 }

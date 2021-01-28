@@ -14,10 +14,10 @@ const ROOT_DIRECTORY = path.resolve( __dirname, '..', '..' );
 const IS_DEVELOPMENT_MODE = process.argv.includes( '--dev' );
 
 //	set the build path
-const IS_STAND_ALONE = false;
-const standAlonePath = path.join( ROOT_DIRECTORY, 'build', 'ckeditor5-dll.manifest.json' );
+const IS_STAND_ALONE = true;
+const standAlonePath = 
 const addonPath = path.join( ROOT_DIRECTORY, '..', '..', 'djangocms_text_ckeditor', 'static', 'djangocms_text_ckeditor', 'build' );
-const modulePath = IS_STAND_ALONE ? standAlonePath : addonPath;
+
 
 if ( ROOT_DIRECTORY !== process.cwd() ) {
 	throw new Error( 'This script should be called from the package root directory.' );
@@ -54,7 +54,7 @@ const webpackConfig = {
 		moduleIds: 'named'
 	},
 	output: {
-		path: modulePath,
+		path: buildPath,
 		filename: 'ckeditor5-dll.js',
 		library: [ 'CKEditor5', 'dll' ],
 		libraryTarget: 'umd'
@@ -67,7 +67,7 @@ const webpackConfig = {
 		new webpack.DllPlugin( {
 			name: 'CKEditor5.dll',
 			context: 'src',
-			path: path.join( modulePath, 'ckeditor5-dll.manifest.json' ),
+			path: path.join( buildPath, 'ckeditor5-dll.manifest.json' ),
 			format: true,
 			entryOnly: true
 		} )
