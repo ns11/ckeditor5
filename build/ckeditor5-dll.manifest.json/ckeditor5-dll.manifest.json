@@ -1,0 +1,96 @@
+{
+  "name": "CKEditor5.dll",
+  "content": {
+    "./clipboard.js": {
+      "id": "./src/clipboard.js",
+      "buildMeta": {
+        "exportsType": "namespace",
+        "providedExports": []
+      }
+    },
+    "./cloud-services-core.js": {
+      "id": "./src/cloud-services-core.js",
+      "buildMeta": {
+        "exportsType": "namespace",
+        "providedExports": []
+      }
+    },
+    "./core.js": {
+      "id": "./src/core.js",
+      "buildMeta": {
+        "exportsType": "namespace",
+        "providedExports": []
+      }
+    },
+    "./engine.js": {
+      "id": "./src/engine.js",
+      "buildMeta": {
+        "exportsType": "namespace",
+        "providedExports": []
+      }
+    },
+    "./enter.js": {
+      "id": "./src/enter.js",
+      "buildMeta": {
+        "exportsType": "namespace",
+        "providedExports": []
+      }
+    },
+    "./paragraph.js": {
+      "id": "./src/paragraph.js",
+      "buildMeta": {
+        "exportsType": "namespace",
+        "providedExports": []
+      }
+    },
+    "./select-all.js": {
+      "id": "./src/select-all.js",
+      "buildMeta": {
+        "exportsType": "namespace",
+        "providedExports": []
+      }
+    },
+    "./typing.js": {
+      "id": "./src/typing.js",
+      "buildMeta": {
+        "exportsType": "namespace",
+        "providedExports": []
+      }
+    },
+    "./ui.js": {
+      "id": "./src/ui.js",
+      "buildMeta": {
+        "exportsType": "namespace",
+        "providedExports": []
+      }
+    },
+    "./undo.js": {
+      "id": "./src/undo.js",
+      "buildMeta": {
+        "exportsType": "namespace",
+        "providedExports": []
+      }
+    },
+    "./upload.js": {
+      "id": "./src/upload.js",
+      "buildMeta": {
+        "exportsType": "namespace",
+        "providedExports": []
+      }
+    },
+    "./utils.js": {
+      "id": "./src/utils.js",
+      "buildMeta": {
+        "exportsType": "namespace",
+        "providedExports": []
+      }
+    },
+    "./widget.js": {
+      "id": "./src/widget.js",
+      "buildMeta": {
+        "exportsType": "namespace",
+        "providedExports": []
+      }
+    }
+  }
+}
