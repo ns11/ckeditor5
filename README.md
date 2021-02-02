@@ -1,9 +1,9 @@
 
 # Abstract
 
-DjangoCMS ckeditor5 readme solution
+ckeditor5-dll readme solution
 
-The current repo is a fork that is create ckeditor builds, as described [here](https://ckeditor.com/docs/ckeditor5/latest/builds/guides/development/custom-builds.html "Creating custom builds"), however, with the new [DLL solution](https://github.com/ckeditor/ckeditor5/issues/8517 "Implement DLLs for CKEditor 5 features") being rolled-out by the [ckeditor](https://github.com/ckeditor "CKEditor Ecosystem") team.
+The current repo is a fork that creates the ckeditor DLL builds, as described [here](https://ckeditor.com/docs/ckeditor5/latest/builds/guides/development/custom-builds.html "Creating custom builds"), however, with the new [DLL solution](https://github.com/ckeditor/ckeditor5/issues/8517 "Implement DLLs for CKEditor 5 features") being rolled-out by the [ckeditor](https://github.com/ckeditor "CKEditor Ecosystem") team.
 
 DLL solves the dreaded ['multiple-instances' issue](https://github.com/ckeditor/ckeditor5/issues/667 "Allow adding plugins to a CKEditor 5 build"), as well as provides an improved way of managing the ckeditor plugins integration.
 
