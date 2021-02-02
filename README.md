@@ -15,7 +15,7 @@ To create your first DLL CKeditor build + basic plugins (see `/src` folder) one 
 2. ```npm run build:dll```- building a new ckeditor
    > Note, by default the ```IS_STAND_ALONE``` constant in `ckeditor5/scripts/dll/webpack.config.dll.js` is `TRUE`, that will create the build inside fork's folder structure. 
    
-   > When, using the fork  as part of the `djangocms-text-ckeditor` running the ```build:dll``` script will require the ```IS_STAND_ALONE``` to be set to `FALSE`.
+   > When, using the fork  as part of the `djangocms-text-ckeditor` running the ```build:dll``` script will with ```IS_STAND_ALONE``` set to `FALSE` will move the `build` inside the DjangoCMS addon's `/static` folder. NOT REQUIRED.
 
 
 To make a new `package-lock.json` file run ```npm ci```.
