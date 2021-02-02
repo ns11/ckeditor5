@@ -9,7 +9,7 @@ DLL solves the dreaded ['multiple-instances' issue](https://github.com/ckeditor/
 
 
 # CKeditor DLL Build
-To create your first DLL CKeditor build + basic plugins (see `/src` folder) one has to run throough the following commands:
+To create your first DLL CKeditor build + basic plugins (see `/src` folder) one has to run through the following commands:
 
 1. ```npm i``` - install all required packages
 2. ```npm run build:dll```- building a new ckeditor
